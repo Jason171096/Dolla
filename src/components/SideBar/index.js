@@ -9,10 +9,10 @@ export const Sidebar = ({ isOpen, toggle }) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to='about'>About</SidebarLink>
-                    <SidebarLink to='discover'>Discover</SidebarLink>
-                    <SidebarLink to='services'>Services</SidebarLink>
-                    <SidebarLink to='signup'>Sign Up</SidebarLink>
+                    <SidebarLink to='about' smooth={true}>About</SidebarLink>
+                    <SidebarLink to='discover' smooth={true}>Discover</SidebarLink>
+                    <SidebarLink to='services' smooth={true}>Services</SidebarLink>
+                    <SidebarLink to='signup' smooth={true}>Sign Up</SidebarLink>
                 </SidebarMenu>
                 <SidebarBtnWrap>
                     <SidebarRoute to='/'>Sign In</SidebarRoute>
