@@ -1,13 +1,19 @@
 import React from 'react'
 import { FaBars } from 'react-icons/fa'
+import { animationScroll as scroll } from 'react-scroll'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavBarElements'
+
+const toggleHome = () => {
+    scroll.scrollToTop();
+}
+
 
 const NavBar = ({ toggle }) => {
     return (
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to='/'>dolla</NavLogo>
+                    <NavLogo to='/' onClick={toggleHome}>dolla</NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
