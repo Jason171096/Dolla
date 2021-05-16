@@ -26,7 +26,7 @@ export const Icon = styled(LinkR)`
     margin: 0 10px;
     font-weight: bold;
     text-decoration: none;
-    width: 100%;
+    width: 50px;
 `
 
 export const FormContent = styled.div`
@@ -66,7 +66,8 @@ export const FormInput = styled.input`
     height: 50px;
     border-radius: 5px;
     box-sizing: border-box;
-
+    font-size 1.6rem;
+    border: none;
     &:focus {
         outline: none;
     }
@@ -81,8 +82,10 @@ export const FormButton = styled.button`
     color: #fff;
     background: #01BF71;
     border-radius: 5px;
+    border: none;
     cursor: pointer;
 `
+
 export const Text = styled(LinkR)`
     text-decoration: none;
     color: #fff;
